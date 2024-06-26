@@ -1,0 +1,10 @@
+@import '@styles/variables.scss';
+
+.sidebar{
+    grid-area: sidebar;
+    margin: 7px;
+    background: $primary-gradient;
+    width: $width-side-bar;
+    padding: 16px;
+    border-radius: $border-radius;
+}

@@ -1,0 +1,20 @@
+@import '@styles/variables.scss';
+
+.layout {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-areas:
+        'sidebar navbar'
+        'sidebar main'
+        'sidebar main'
+        'sidebar main'
+    ;
+    background: linear-gradient(180deg, rgba(209, 213, 221, 0.8) 0%, rgba(242, 242, 243, 0.9) 100%); 
+
+    .main {
+        height: calc(100vh - $height-navbar);
+        grid-area: main;
+        overflow: auto;
+        padding: 16px;
+    }
+}
