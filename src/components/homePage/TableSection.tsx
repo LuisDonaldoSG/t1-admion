@@ -158,11 +158,12 @@ export default function TableSection({data}: TableSectionI) {
                         <TableRow key={item.id}>
                             {
                                 (columnKey) => <TableCell>
-                                    <RenderCell
-                                        columnKey={columnKey}
-                                        user={item}
-                                        key={item.id}
-                                    />
+                                    {
+                                        RenderCell({
+                                            columnKey,
+                                            user: item
+                                        }) as any
+                                    }
                                 </TableCell>
                             }
                         </TableRow>
